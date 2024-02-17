@@ -1,0 +1,327 @@
+html {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  background-color: #b03a2e;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar-pizzeria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  width: auto;
+  background-color: black;
+}
+
+.pizza-icon {
+  color: #b03a2e;
+}
+
+.logo-text-pizzeria {
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
+.shopping-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.shopping-icon {
+  color: #b03a2e;
+  margin-right: 1rem;
+}
+
+.addcart-icon {
+  color: white;
+  background-color: transparent;
+}
+
+.pizza-active {
+  color: white;
+  text-decoration: none;
+}
+
+.pizza-inactive {
+  color: white;
+  text-decoration: none;
+}
+
+.link-btn {
+  text-decoration: none;
+}
+
+.header-container {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 400px;
+}
+
+.header-text {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.header-pizza {
+  opacity: 0.5;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-title {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.home-pizzas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  gap: 2rem;
+  max-width: 1500px;
+  margin: 100px auto;
+  padding: 50px auto;
+}
+
+.home-pizzas-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: white;
+  border: 3px solid #b03a2e;
+  border-radius: 15px;
+  text-align: left;
+  position: relative;
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem;
+}
+
+.img-pizza {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.name-pizza {
+  color: black;
+}
+
+.lista-pizza {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.data-pizza {
+  color: #b03a2e;
+  text-align: center;
+}
+
+.btn-pizza-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #b03a2e;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.25s all ease-in;
+}
+
+button:hover {
+  background-color: #912f24;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 5rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: black;
+  padding: 40px auto;
+  width: 100%;
+}
+
+.card-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 2rem;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.card-details {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.card-data {
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: left;
+}
+
+.btn-pizza {
+  display: flex;
+  align-items: center;
+}
+
+.home-btn {
+  background-color: #b03a2e;
+  color: white;
+}
+
+.shop-container {
+  margin: 4rem, 7rem;
+}
+
+.btn-shop-cart {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+}
+
+.btn-shop-delete {
+  background: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.box-title {
+  margin-bottom: 3rem;
+}
+
+.box-price {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.cart-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.shop-details-1,
+.shop-details-2 {
+  display: flex;
+  align-items: center;
+}
+
+.btn-shop {
+  display: flex;
+  align-items: center;
+}
+
+.cart-list {
+  color: gray;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.text-price {
+  margin-left: 1rem;
+}
+
+.btn-message {
+  background-color: black;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #b03a2e;
+}
+
+.cart-title {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.total-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  background-color: #b03a2e;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.social-icon {
+  color: white;
+  cursor: pointer;
+}
